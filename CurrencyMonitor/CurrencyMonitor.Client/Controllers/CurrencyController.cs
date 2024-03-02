@@ -1,0 +1,74 @@
+using AutoMapper;
+using CurrencyMonitor.Core.CurrencySerializeObject;
+using CurrencyMonitor.Core.Models;
+using CurrencyMonitor.DB.Context;
+using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
+
+namespace CurrencyMonitor.Client.Controllers;
+
+[ApiController]
+[Route("[Controller]")]
+public class CurrencyController : ControllerBase
+{
+    private readonly ILogger<CurrencyController> _logger;
+    private readonly IMapper _mapper;
+
+    public CurrencyController(ILogger<CurrencyController> logger, IMapper mapper)
+    {
+        _logger = logger;
+        _mapper = mapper;
+    }
+
+    [HttpGet]
+    [Route("GetAllInformation")]
+    public async Task<CurrencyExchange> GetDollar()
+    {
+        var client = new HttpClient();
+        string apiUrl = "http://api.exchangeratesapi.io/v1/latest" +
+            "?access_key=5389859fdfa49fb263c9a84506777a2a" +
+            "&symbols=USD, EUR";
+        HttpResponseMessage response = await client.GetAsync(apiUrl);
+
+        if (response.IsSuccessStatusCode)
+        {
+            string jsonContent = await response.Content.ReadAsStringAsync();
+            var a = JsonSerializer.Deserialize<CurrencyExchange>(jsonContent);
+            return a;
+        }
+        else
+        {
+            return null;
+        }
+    }
+
+    [HttpGet]
+    [Route("GetRates")]
+    public async Task<CurrencyRates> GetRates()
+    {
+        var client = new HttpClient();
+        string apiUrl = "http://api.exchangeratesapi.io/v1/latest" +
+            "?access_key=5389859fdfa49fb263c9a84506777a2a" +
+            "&symbols=USD, EUR";
+        HttpResponseMessage response = await client.GetAsync(apiUrl);
+
+        if (response.IsSuccessStatusCode)
+        {
+            string jsonContent = await response.Content.ReadAsStringAsync();
+            var currencyExchangeObject = JsonSerializer.Deserialize<CurrencyExchange>(jsonContent);
+            var currencyRates = _mapper.Map<CurrencyRates>(currencyExchangeObject);
+
+            using (var context = new ApplicationContext())
+            {
+                await context.CurrencyRates.AddAsync(currencyRates);
+                await context.SaveChangesAsync();
+            }
+
+            return currencyRates;
+        }
+        else
+        {
+            return null;
+        }
+    }
+}

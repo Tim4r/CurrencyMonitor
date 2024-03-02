@@ -1,0 +1,15 @@
+D:\Repositories\CurrencyMonitor\CurrencyMonitor\CurrencyMonitor.DB\obj\Debug\net7.0\CurrencyMonitor.DB.csproj.AssemblyReference.cache
+D:\Repositories\CurrencyMonitor\CurrencyMonitor\CurrencyMonitor.DB\obj\Debug\net7.0\CurrencyMonitor.DB.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositories\CurrencyMonitor\CurrencyMonitor\CurrencyMonitor.DB\obj\Debug\net7.0\CurrencyMonitor.DB.AssemblyInfoInputs.cache
+D:\Repositories\CurrencyMonitor\CurrencyMonitor\CurrencyMonitor.DB\obj\Debug\net7.0\CurrencyMonitor.DB.AssemblyInfo.cs
+D:\Repositories\CurrencyMonitor\CurrencyMonitor\CurrencyMonitor.DB\obj\Debug\net7.0\CurrencyMonitor.DB.csproj.CoreCompileInputs.cache
+D:\Repositories\CurrencyMonitor\CurrencyMonitor\CurrencyMonitor.DB\bin\Debug\net7.0\CurrencyMonitor.DB.deps.json
+D:\Repositories\CurrencyMonitor\CurrencyMonitor\CurrencyMonitor.DB\bin\Debug\net7.0\CurrencyMonitor.DB.dll
+D:\Repositories\CurrencyMonitor\CurrencyMonitor\CurrencyMonitor.DB\bin\Debug\net7.0\CurrencyMonitor.DB.pdb
+D:\Repositories\CurrencyMonitor\CurrencyMonitor\CurrencyMonitor.DB\bin\Debug\net7.0\CurrencyMonitor.Core.dll
+D:\Repositories\CurrencyMonitor\CurrencyMonitor\CurrencyMonitor.DB\bin\Debug\net7.0\CurrencyMonitor.Core.pdb
+D:\Repositories\CurrencyMonitor\CurrencyMonitor\CurrencyMonitor.DB\obj\Debug\net7.0\CurrencyMonitor.DB.csproj.CopyComplete
+D:\Repositories\CurrencyMonitor\CurrencyMonitor\CurrencyMonitor.DB\obj\Debug\net7.0\CurrencyMonitor.DB.dll
+D:\Repositories\CurrencyMonitor\CurrencyMonitor\CurrencyMonitor.DB\obj\Debug\net7.0\refint\CurrencyMonitor.DB.dll
+D:\Repositories\CurrencyMonitor\CurrencyMonitor\CurrencyMonitor.DB\obj\Debug\net7.0\CurrencyMonitor.DB.pdb
+D:\Repositories\CurrencyMonitor\CurrencyMonitor\CurrencyMonitor.DB\obj\Debug\net7.0\ref\CurrencyMonitor.DB.dll

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "rmWmPuS1mPuWaTRdJDcIFwgott3CzmTT6HyUe0SmaO8=",
+  "Source": "CurrencyMonitor.Client",
+  "BasePath": "_content/CurrencyMonitor.Client",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

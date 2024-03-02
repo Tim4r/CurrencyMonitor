@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CurrencyMonitor.Client.props" />
+</Project>
