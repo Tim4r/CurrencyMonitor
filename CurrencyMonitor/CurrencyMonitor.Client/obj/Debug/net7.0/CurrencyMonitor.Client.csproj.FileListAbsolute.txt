@@ -15,7 +15,6 @@ D:\Repositories\CurrencyMonitor\CurrencyMonitor\CurrencyMonitor.Client\obj\Debug
 D:\Repositories\CurrencyMonitor\CurrencyMonitor\CurrencyMonitor.Client\obj\Debug\net7.0\CurrencyMonitor.Client.AssemblyInfoInputs.cache
 D:\Repositories\CurrencyMonitor\CurrencyMonitor\CurrencyMonitor.Client\obj\Debug\net7.0\CurrencyMonitor.Client.AssemblyInfo.cs
 D:\Repositories\CurrencyMonitor\CurrencyMonitor\CurrencyMonitor.Client\obj\Debug\net7.0\CurrencyMonitor.Client.csproj.CoreCompileInputs.cache
-D:\Repositories\CurrencyMonitor\CurrencyMonitor\CurrencyMonitor.Client\obj\Debug\net7.0\CurrencyMonitor.Client.MvcApplicationPartsAssemblyInfo.cs
 D:\Repositories\CurrencyMonitor\CurrencyMonitor\CurrencyMonitor.Client\obj\Debug\net7.0\CurrencyMonitor.Client.MvcApplicationPartsAssemblyInfo.cache
 D:\Repositories\CurrencyMonitor\CurrencyMonitor\CurrencyMonitor.Client\obj\Debug\net7.0\staticwebassets\msbuild.CurrencyMonitor.Client.Microsoft.AspNetCore.StaticWebAssets.props
 D:\Repositories\CurrencyMonitor\CurrencyMonitor\CurrencyMonitor.Client\obj\Debug\net7.0\staticwebassets\msbuild.build.CurrencyMonitor.Client.props
