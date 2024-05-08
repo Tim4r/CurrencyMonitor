@@ -1,10 +1,7 @@
 using AutoMapper;
 using CurrencyMonitor.Core.CurrencySerializeObject;
 using CurrencyMonitor.Core.Interfaces;
-using CurrencyMonitor.Core.IRepository;
 using CurrencyMonitor.Core.Models;
-using CurrencyMonitor.DB.Context;
-using CurrencyMonitor.DB.Repositores;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
 

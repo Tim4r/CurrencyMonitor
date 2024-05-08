@@ -10,7 +10,7 @@ public class CurrencyRepository : ICurrencyRepository
 
     public CurrencyRepository(ApplicationContext context) => _context = context;
 
-    public async Task AddCurrency(CurrencyRates currencyRates)
+    public async Task AddCurrency (CurrencyRates currencyRates)
     {
         await _context.CurrencyRates.AddAsync(currencyRates);
         await _context.SaveChangesAsync();

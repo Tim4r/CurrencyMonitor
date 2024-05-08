@@ -1,7 +1,4 @@
 using AutoMapper;
-using CurrencyMonitor.Client.Controllers;
-using CurrencyMonitor.Core.Interfaces;
-using Quartz;
 
 namespace CurrencyMonitor.Client;
 
@@ -19,34 +16,6 @@ public class Program
         builder.Services.AddSwaggerGen();
 
         builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-
-        // Add Quartz services
-        builder.Services.AddQuartz(q =>
-        {
-            
-            //Use a persistent job store
-            q.UsePersistentStore(s =>
-            {
-                s.UseProperties = true;
-                s.RetryInterval = TimeSpan.FromSeconds(15);
-                s.PerformSchemaValidation = true;
-                s.UseSqlServer("Server=.;Database=CurrencyDb;Trusted_Connection=true;TrustServerCertificate=True;");
-
-                //s.UseBinarySerializer();
-            });
-
-
-            q.AddTrigger(opts => opts
-                .ForJob(nameof(FetchCurrencyRatesJob))
-                .WithIdentity("FetchCurrencyRatesTrigger")
-                .WithCronSchedule("0 0/1 * 1/1 * ? *")); // Cron expression for every minute
-        });
-
-        builder.Services.AddQuartzHostedService(q => q.WaitForJobsToComplete = true);
-
-
-        builder.Services.AddScoped<ICurrencyRatesService, CurrencyController>();
-
 
         var app = builder.Build();
 
