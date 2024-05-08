@@ -1,5 +1,6 @@
 using AutoMapper;
 using CurrencyMonitor.Core.CurrencySerializeObject;
+using CurrencyMonitor.Core.Interfaces;
 using CurrencyMonitor.Core.IRepository;
 using CurrencyMonitor.Core.Models;
 using CurrencyMonitor.DB.Context;
@@ -11,7 +12,7 @@ namespace CurrencyMonitor.Client.Controllers;
 
 [ApiController]
 [Route("[Controller]")]
-public class CurrencyController : ControllerBase
+public class CurrencyController : ControllerBase, ICurrencyRatesService
 {
     private readonly ILogger<CurrencyController> _logger;
     private readonly IMapper _mapper;
@@ -21,8 +22,6 @@ public class CurrencyController : ControllerBase
         _logger = logger;
         _mapper = mapper;
     }
-
-    ICurrencyRepository _currencyRepository = new CurrencyRepository(new ApplicationContext());
 
     [HttpGet]
     [Route("GetAllInformation")]
@@ -62,7 +61,7 @@ public class CurrencyController : ControllerBase
             var currencyExchangeObject = JsonSerializer.Deserialize<CurrencyExchange>(jsonContent);
             var currencyRates = _mapper.Map<CurrencyRates>(currencyExchangeObject);
 
-            await _currencyRepository.AddCurrency(currencyRates);
+            //await _currencyRepository.AddCurrency(currencyRates);
 
             return currencyRates;
         }
