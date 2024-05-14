@@ -79,3 +79,4 @@ D:\Repositories\CurrencyMonitor\CurrencyMonitor\CurrencyMonitor.Client\bin\Debug
 D:\Repositories\CurrencyMonitor\CurrencyMonitor\CurrencyMonitor.Client\bin\Debug\net7.0\CurrencyMonitor.DB.pdb
 D:\Repositories\CurrencyMonitor\CurrencyMonitor\CurrencyMonitor.Client\bin\Debug\net7.0\AutoMapper.dll
 D:\Repositories\CurrencyMonitor\CurrencyMonitor\CurrencyMonitor.Client\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Repositories\CurrencyMonitor\CurrencyMonitor\CurrencyMonitor.Client\obj\Debug\net7.0\CurrencyMonitor.Client.MvcApplicationPartsAssemblyInfo.cs

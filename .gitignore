@@ -1,0 +1,16 @@
+node_modules
+bin
+obj
+publish
+wwwroot
+packages
+*.suo
+*.user
+.vs
+.v2
+.idea
+.awcache
+.vscode
+*.tmp
+npm-debug.log
+GalileoSom.WebServices/WebServices/Web.config
