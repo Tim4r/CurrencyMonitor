@@ -13,3 +13,4 @@ packages
 *.tmp
 npm-debug.log
 GalileoSom.WebServices/WebServices/Web.config
+*.v2
